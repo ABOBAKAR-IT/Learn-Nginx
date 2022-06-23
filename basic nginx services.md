@@ -36,3 +36,8 @@ sudo systemctl start nginx
   ```
   sudo service nginx stop
   ```
+  # Check nginx run successful
+  ```
+  sudo nginx -t
+  ```
+  
