@@ -5,3 +5,7 @@
 
 # Deploy Static website on nginx
 <a href="https://github.com/ABOBAKAR-IT/Learn-Nginx/blob/master/static%20website%20in%20nginx.md"  > # Static website in nginx</a>
+
+
+# Deploy Node App on nginx
+<a href=""  > # Node App website in nginx</a>
