@@ -54,3 +54,36 @@ sudo nginx -t
   sudo service nginx restart
   ```
   # Now your site available for every one
+
+# 6 Enable G-Zip 
+```
+ 
+
+
+server {
+       listen 80;
+       listen [::]:80;
+
+       server_name abobakar.me;
+
+
+gzip on;
+  gzip_proxied any;
+  gzip_comp_level 6;
+  gzip_buffers 16 8k;
+  gzip_http_version 1.1;
+  gzip_types text/css application/javascript application/json application/font-woff application/font-tff image/gif image/png image/svg+xml application/octet-stream;
+
+
+
+       root /var/www/abobakar.me;
+       index index.html;
+
+      location / {
+               try_files $uri $uri/ =404;
+      }
+}
+
+
+
+```
